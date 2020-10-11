@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(example)
 
-find_library(TENSORFLOW_LIB tensorflow HINT $ENV{HOME}/libtensorflow/lib)
+find_library(TENSORFLOW_LIB tensorflow HINT /opt/libtensorflow/lib)
 
 set(CMAKE_CXX_STANDARD 17)
 add_executable(example main.cpp ../../src/Model.cpp ../../src/Tensor.cpp)
